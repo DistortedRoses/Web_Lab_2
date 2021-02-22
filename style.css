@@ -1,0 +1,128 @@
+h1
+{ /*Первый заголовок*/
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+}
+
+
+h2
+{ /*Заголовок "меню"*/
+	text-align: center;
+	font-family: Courier;
+	font-size: 38px;
+}
+
+
+h2 a
+{ /*Вид ссылок меню*/
+	color: black;
+	text-decoration: none;
+}
+
+p a
+{ /*Вид ссылок в списке товаров*/
+	color:black;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+body
+{ /*Задний фон*/
+	background-color: #bdc3c7;
+}
+
+h3
+{ /*Заголовки описания товара*/
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+
+	text-align:left;
+	margin-bottom: -8px;
+}
+
+p1
+{ /*Кратное описание товара*/
+	color: #000000;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+}
+
+p2
+{ /*Подробное описание товара*/
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+
+ul
+{ /*Характеристики товара*/
+	color: black;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	list-style-image: url(pen.png);
+}
+
+ul li
+{ /*Отступ между характеристиками*/
+	padding-bottom: 15px;
+}
+
+p img
+{ /*Уменьшенная версия изображения*/
+	margin: 0px auto 0px auto;
+	width: 15%;
+	height: 15%;
+	display: block;
+	border: none;
+}
+
+img
+{ /*Изображение в подробностях фильма*/
+	margin:0px auto 0px auto;
+	width: 20%;
+	height: 20%;
+	display: block;
+	border: 5px solid #668B8B;
+    font-family: cursive; 
+}
+
+input[type=name]
+{
+	border: 3px solid #668B8B;
+	border-radius: 5px;
+	line-height: 28px;
+	font-size:14px;
+}
+
+input[type=email]
+{
+	border: 3px solid #668B8B;
+	border-radius: 5px;
+	font-size:14px;
+	line-height: 28px;
+}
+
+input[type=topic]
+{
+	border: 3px solid #668B8B;
+	border-radius: 5px;
+	line-height: 28px;
+	font-size: 14px;
+}
+
+textarea
+{
+	border: 3px solid #668B8B;
+	border-radius: 5px;
+	line-height: 20px;
+	font-size: 14px;
+	font-family: inherit;
+	resize: none;
+}

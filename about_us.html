@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>О нас</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script>
+
+			function SendMail ()
+			{
+	            var val = document.getElementById("name").value;
+	            var mail = document.getElementById("email").value;
+	            alert(val + " (" + mail +"), Ваше сообщение успешно отправлено!");
+        	}
+
+			function myMap() {
+		        var mapOptions = {
+			        center: new google.maps.LatLng(54.166955, 37.586500),
+			        zoom: 14,
+			        mapTypeId: google.maps.MapTypeId.HYBRID
+		    	}
+		        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	        }
+
+		</script>
+
+		<hr color = "blue" width = +2>
+		<h1>НАША КОМПАНИЯ</h1>
+		<hr color = "blue">
+	</head>
+
+	<h2>
+		<a href = "main.html" title = "Главная страница сайта">Главная</a><br><br>
+		<a href = "Film_List.html" title = "Список актуальных фильмов">Список фильмов</a><br><br>
+		<a href = "about_us.html" title = "Вся доступная информация о нашей компании">О Нас</a>
+	</h2>
+
+	<font size = +2><br>
+		Наш кинотеатр предоставляет услуги видеопроката фильмов в г. Тула.<br>
+		На нашем сайте вы сможете ознакомиться со списком доступных кинофильмов в прокате, просмотреть описание текущего кинофильма и забронировать место в кинозале на него.<br>
+	</font>
+
+	<hr color = "blue">
+
+	<h1>Свяжитесь с нами</h1>
+
+	<form action = "registration.php">
+        <p>
+	        <label for="name2">Имя</label>
+	        <input type="name" id="name">
+	    </p>
+        <p>
+        	<label for="email">E-mail</label>
+        	<input type="email" id="email">
+    	</p>
+        <p>
+        	<label for="topic">Тема сообщения</label>
+        	<input type="topic" id="topic">
+        </p>
+        <p>
+        	<label for="text">Текст сообщения</label><br>
+        	<textarea name="text" cols="100" rows="10"></textarea>
+        </p>
+    </form>
+
+	<input type = "button" name = "button2" onclick = "SendMail()" value = "Отправить" style = "font-size: 14px; width: 150px; height: 30px;"/>
+
+	<hr color = "blue">
+	<h1>Контактные данные</h1>
+	<font size = +2>
+		Тел. <a href = "tel:+79308953718">+7(930)8953718</a><br>
+		E-mail:<a href = "mailto:valtes22@mail.ru">valtes22@mail.ru</a><br>
+		Адрес: Россия, г. Тула, Проспект Ленина, 92<br>
+		<br>
+		<center>
+			<div id = "map" style = "width: 50%; height: 500px;"></div>
+    		<script src = "https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    		<br>
+		</center>
+	</font>
+
+	<hr color = "blue">
+
+	<h1>Гл. руководитель</h1>
+	<img src = "Photo.png" wight = "350px" height = "350px">
+	<p align = "center"><b>Прокофьев В.О.</b></p>
+
+	<footer>
+		<hr color = "black"><p>&copy Валентин Прокофьев 2021<br>Все права защищены.</p>
+	</footer>
+</html>
